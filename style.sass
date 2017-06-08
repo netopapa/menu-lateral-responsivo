@@ -1,5 +1,5 @@
 $tudo: 100%
-$h: 3000px
+$h: 700px
 
 $time: .3s
 
@@ -17,7 +17,7 @@ $pad: 0
 	position: relative
 	overflow: hidden
 	width: $tudo
-	height: $h
+	min-height: $h
 
 .canvas
 	width: $tudo
@@ -27,7 +27,7 @@ $pad: 0
 	transition: $time ease all
 
 .menu
-	height: $tudo
+	min-height: $h
 	position: absolute
 	transform: translate3d($ride, 0, 0)
 	width: $notRide
