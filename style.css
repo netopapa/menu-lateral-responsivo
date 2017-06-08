@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 3000px; }
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translate3d(0);
+  transition: 0.3s ease all; }
+
+.menu {
+  height: 100%;
+  position: absolute;
+  transform: translate3d(-300px, 0, 0);
+  width: 300px;
+  background: #BF0000;
+  padding: 0; }
+
+.wrapper.show-menu .canvas {
+  transform: translate3d(300px, 0, 0); }
+
+/*# sourceMappingURL=style.css.map */
