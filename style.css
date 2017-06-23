@@ -1,8 +1,13 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  font-family: 'Architects Daughter', cursive;
+}
 .wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 3000px; }
+  height: 700px; }
 
 .canvas {
   width: 100%;
@@ -12,14 +17,76 @@
   transition: 0.3s ease all; }
 
 .menu {
-  height: 100%;
+  min-height: 700px;
   position: absolute;
   transform: translate3d(-300px, 0, 0);
   width: 300px;
-  background: #BF0000;
+  background: #b50202;
   padding: 0; }
 
 .wrapper.show-menu .canvas {
   transform: translate3d(300px, 0, 0); }
+
+.conteudo {
+  transform: rotate(-90deg);
+  margin: 0 74% 0 -24%; }
+
+.btn-menu-l {
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 5px 5px 5px 12px;
+  width: 190px;
+  background: #b50202; }
+
+.no-decoration {
+  text-decoration: none; }
+
+i{
+  margin: 0 5px 0 10px;
+}
+
+ul{
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  height: 45px;
+  margin: 5px auto;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  transition: border-bottom .3s ease; 
+}
+
+li.toggle-menu{
+  font-size: 20px;
+  transition: font-size .3s ease;
+}
+
+li.toggle-menu:hover{
+  font-size: 23px;
+}
+
+
+li a{
+  font-size: 20px;
+  color: #fff;
+  transition: color .8s ease;
+}
+
+li a:hover{
+  color: #000;
+}
+
+li:hover{
+  border-bottom: 6px solid #fff;
+}
 
 /*# sourceMappingURL=style.css.map */

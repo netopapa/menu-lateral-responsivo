@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Toggle menu</title>
+	<title>Menu lateral</title>
 	<meta charset="utf-8">
+	<link rel="icon" href="om.jpg">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -10,19 +13,18 @@
 		<div class="canvas">
 		<!-- Aqui fica o menu escondido -->
 			<div class="menu">
-				<a href="#" class="toggle-menu btn">Fechar o menu</a>
                 <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+                	<li class="toggle-menu"><i class="fa fa-arrow-left" aria-hidden="true"></i>Close</li>
+                    <li><a href="https://github.com/netopapa/toggle-menu" target="_blanc"><i class="fa fa-github" aria-hidden="true"></i>GITHUB PAGE</a></li>
+                    <li><a href="https://github.com/netopapa/toggle-menu/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i>DOWNLOAD</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-grav" aria-hidden="true"></i>NOTHING</a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-key" aria-hidden="true"></i>MORE NOTHING</a></li>
                 </ul>
 			</div>
 
 			<!-- Aqui fica o conteúdo do site -->
             <div class="conteudo">
-                <a href="#" class="toggle-menu">Abrir o menu</a>
-                <h1>Menu Off Canvas!!</h1>
-                <p>Menu lateral boladão</p>
+                <a href="#" class="toggle-menu no-decoration"><h1 class="btn-menu-l">Menu Bolado</h1></a>
             </div>
 		</div>
 	</div>

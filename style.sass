@@ -1,0 +1,58 @@
+$tudo: 100%
+$h: 700px
+
+$time: .3s
+
+$ride: -300px
+$notRide: 300px
+
+$red: #b50202
+$gray: #dadada
+$blue: #006c8a
+$white: #ffffff
+
+$pad: 0
+
+.wrapper
+	position: relative
+	overflow: hidden
+	width: $tudo
+	min-height: $h
+
+.canvas
+	width: $tudo
+	height: $tudo
+	position: relative
+	transform: translate3d(0)
+	transition: $time ease all
+
+.menu
+	min-height: $h
+	position: absolute
+	transform: translate3d($ride, 0, 0)
+	width: $notRide
+	background: $red
+	padding: $pad
+
+.wrapper.show-menu .canvas
+	transform: translate3d($notRide, 0, 0)
+
+.conteudo
+	transform: rotate(-90deg)
+	margin: 0 74% 0 -24%
+
+.btn-menu-l
+	color: $white
+	border-radius: 15px
+	padding: 5px 5px 5px 12px
+	width: 130px
+	background: $red
+
+
+
+.no-decoration
+	text-decoration: none
+
+
+
+
